@@ -74,6 +74,10 @@
     "version": "is-prerelease || npm run changelog && git add CHANGELOG.md",
     "zip": "cd dist && cross-env bestzip \"./video-js-${npm_package_version}.zip\" * && cd .."
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/videojs/video.js.git"
+  },
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "@videojs/http-streaming": "1.11.2",
