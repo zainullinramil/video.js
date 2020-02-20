@@ -1,7 +1,7 @@
 {
-  "name": "video.js",
+  "name": "@imagespark/video.js",
   "description": "An HTML5 and Flash video player with a common API and skin for both.",
-  "version": "7.7.4",
+  "version": "7.7.5",
   "main": "./dist/video.cjs.js",
   "module": "./dist/video.es.js",
   "style": "./dist/video-js.css",
@@ -14,7 +14,6 @@
     "video",
     "videojs"
   ],
-  "homepage": "https://videojs.com",
   "author": "Steve Heffernan",
   "scripts": {
     "sandbox": "node build/sandbox.js",
@@ -74,10 +73,6 @@
     "publish": "node build/gh-release.js",
     "version": "is-prerelease || npm run changelog && git add CHANGELOG.md",
     "zip": "cd dist && cross-env bestzip \"./video-js-${npm_package_version}.zip\" * && cd .."
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/videojs/video.js.git"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.5",

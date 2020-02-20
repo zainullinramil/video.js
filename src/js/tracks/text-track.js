@@ -72,7 +72,8 @@ const parseCues = function(srcContent, track) {
  */
 const loadTrack = function(src, track) {
   const opts = {
-    uri: src
+    uri: src,
+    withCredentials: true
   };
   const crossOrigin = isCrossOrigin(src);
 
